@@ -5,21 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="361b021c-3378-409c-a8b1-bd558bb723a3" name="Changes" comment="TestNG Selenium">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MapsExamples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/Test.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/main/java/fan/curier/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/main/java/fan/curier/pages/AWBTrackingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/main/java/fan/curier/pages/CoveragePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/main/java/fan/curier/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/main/java/fan/curier/pages/ServicesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/main/java/fan/curier/utils/FrameworkUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/src/test/java/TestHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/target/classes/fan/curier/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/target/classes/fan/curier/pages/AWBTrackingPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/target/classes/fan/curier/pages/CoveragePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/target/classes/fan/curier/pages/HomePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/target/classes/fan/curier/pages/ServicesPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fan curier/target/test-classes/TestHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BrowserSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BrowserSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestNGSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TestNGSelenium.java" afterDir="false" />
     </list>
@@ -65,21 +73,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/SkillBrain/homework/selenium-java2/src/test/java/org&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/SkillBrain/homework/selenium-java2/src/test/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2536232&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "D:/SkillBrain/homework/selenium-java2/src/test/java/org",
+    "last_opened_file_path": "D:/SkillBrain/FAN curier",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.splitter.proportion": "0.2536232"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SkillBrain\homework\selenium-java2\src\test\resources" />
@@ -210,10 +218,10 @@
     <list>
       <item itemvalue="Application.MapsExamples" />
       <item itemvalue="TestNG.TestGrup" />
-      <item itemvalue="TestNG.TestNGSelenium.testPageEGOV" />
-      <item itemvalue="TestNG.TestNGSelenium.testPageTitle2" />
-      <item itemvalue="TestNG.TestNGSelenium.testPageTitle1" />
       <item itemvalue="TestNG.D:/SkillBrain/homework/selenium-java2/src/test/resources/TestByClasses.xml" />
+      <item itemvalue="TestNG.TestNGSelenium.testPageEGOV" />
+      <item itemvalue="TestNG.TestNGSelenium.testPageTitle1" />
+      <item itemvalue="TestNG.TestNGSelenium.testPageTitle2" />
     </list>
     <recent_temporary>
       <list>
@@ -241,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683267741887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TestNG Selenium">
+      <created>1683825560564</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683825560564</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

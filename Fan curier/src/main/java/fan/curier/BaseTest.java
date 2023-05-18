@@ -1,29 +1,46 @@
-package org.example;
+package fan.curier;
 
+import fan.curier.pages.AWBTrackingPage;
+import fan.curier.pages.CoveragePage;
+import fan.curier.pages.HomePage;
+import fan.curier.pages.ServicesPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
-import java.sql.SQLOutput;
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.Map;
 
-public class BrowserSetup {
+import static fan.curier.utils.FrameworkUtils.*;
 
-    static WebDriver driver;
-    String URL = "https://energie.gov.ro/";
+public class BaseTest {
+
+    private WebDriver driver;
+    private WebDriverWait wait;
+    private final static Integer WAIT_PAGE = 1000;
+    private final static Integer WAIT_ACTION = 500;
+    private final static Integer EXPLICIT_WAIT_SECONDS = 10;
+    String URL = "https://www.fancourier.ro/";
+
+   public HomePage homePage;
+   public AWBTrackingPage awbTrackingPage;
+   public CoveragePage coveragePage;
+   public ServicesPage servicesPage;
 
     @BeforeSuite()
     public void beforeSuite() {
         System.out.println(" > BeforeSuite < ");
         browserSetUp();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT_SECONDS));
+        homePage = new HomePage(driver);
+        awbTrackingPage = new AWBTrackingPage(driver);
+        coveragePage = new CoveragePage(driver);
+        servicesPage = new ServicesPage(driver);
     }
+
     @AfterSuite()
     public void afterSuite() {
         System.out.println(" > AfterSuite < ");
@@ -48,52 +65,29 @@ public class BrowserSetup {
 
     @BeforeMethod()
     public void beforeMethod(){
-        System.out.println(" > BeforeMethod <");
+        log(" > BeforeMethod <");
         openURL(URL);
     }
 
     @AfterMethod()
     public void afterMethod(){
-        System.out.println(" > AfterMethod <");
-        wait(1000);
+        log(" > AfterMethod <");
+        sleep(WAIT_ACTION);
     }
 
     public void quitBrowser() {
         log("Closing Chrome browser.");
         driver.quit();
+        sleep(WAIT_ACTION);
     }
 
     public void openURL(String url) {
         log("Opening URL: " + url);
         driver.get(url);
+        sleep(WAIT_PAGE);
     }
 
-    public WebElement findByXpath(String xpath) {
-        WebElement element = null;
-        try {
-            element = driver.findElement(By.xpath(xpath));
-        } catch (Exception e) {
-            System.out.println("Elementul nu a fost gasit.");
-        }
-
-        return element;
-    }
-
-    public static void log(String text) {
-        System.out.println(text);
-    }
-
-    public static void wait(int millis) {
-        log(String.format("Waiting for %d millis.", millis));
-
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public void browserSetUp() {
+    private void browserSetUp() {
         log("Setting up Chrome browser.");
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -113,10 +107,13 @@ public class BrowserSetup {
         options.addArguments("--kiosk");
         options.setExperimentalOption("prefs", chromePrefs);
         driver = new ChromeDriver(options);
-        System.out.println(driver.manage().timeouts().getImplicitWaitTimeout());
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public WebDriverWait getWait() {
+        return wait;
+    }
 }

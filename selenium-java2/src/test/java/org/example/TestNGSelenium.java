@@ -37,7 +37,6 @@ public class TestNGSelenium extends BrowserSetup {
     public void testPageEGOV() {
         System.out.println("Test_S3 E GOV");
         WebElement searchField = driver.findElement(By.xpath("//input[@class='search']"));
-
         WebElement searchButton = driver.findElement(By.xpath("//input[@type='submit']"));
 
         searchField.sendKeys("DAMADADC");
@@ -50,14 +49,6 @@ public class TestNGSelenium extends BrowserSetup {
         List<WebElement> home = driver.findElements(By.id("menu-item-27645"));
         System.out.println("home mobile: " + home.get(0).isDisplayed());
         System.out.println("home web: " +home.get(1).isDisplayed());
-
     }
-
-    //*[@id="menu-item-27467"]/amenu-item-27467
-
-    //*[@class='element-group']//*[contains(text(), 'Interaction')]
-    //*[@class='text'][contains(text(), 'Droppable')]
-    //id="draggable"
-    //id="droppable"
 
 }
